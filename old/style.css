@@ -1,0 +1,40 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #5fae57;
+}
+
+.header{display: inline-block;}
+
+#logo{
+    width:100px;
+}
+
+#pageTitle{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+.navbar{
+    grid-column: 1/-1;
+}
+.fb{
+    grid-column: 1/2;
+}
+.article{
+    grid-column: 2/-1;
+    background-color: #378b2e;
+}
+
+.article-title{
+    font-size: 20px;
+    border:2px solid #bae386;
+    box-sizing: border-box;
+    padding: 3px;
+}
+

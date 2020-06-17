@@ -1,0 +1,23 @@
+{
+  "name": "wota",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss build style.css -o output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasd0109/Wotasaidwhat-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasd0109/Wotasaidwhat-page/issues"
+  },
+  "homepage": "https://github.com/wasd0109/Wotasaidwhat-page#readme",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}

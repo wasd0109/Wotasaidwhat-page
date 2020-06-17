@@ -1,66 +1,91 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ヲタ噏乜9</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <header class="header">
-            <img id="logo" src="image/logo.jpg" alt="Page logo">
-            <h1 id="pageTitle">ヲタ噏乜9</h1>
-        </header>
-        <br>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #92d18b">
-            <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/wotasaidwhat9/">Facebook Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <br>
-        <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwotasaidwhat9%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-            class="fb" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowTransparency="true" allow="encrypted-media"></iframe>
-        <div class="article">
-            <h2 class="article-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum exercitationem
-                esse nostrum animi
-                obcaecati impedit et temporibus, reprehenderit iusto earum doloremque voluptatem illum neque. Ut
-                eius
-                totam accusamus similique illo?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum asperiores consequatur voluptate
-                suscipit quod repellendus illo! Aspernatur iusto debitis, repellat exercitationem libero est
-                excepturi non labore, laudantium, explicabo sint!</p>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="./image/site_logo.png" />
+  </head>
+  <body class="bg-green-400">
+    <nav class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 w-40 lg:w-32">
+        <img src="./image/logo.png" alt="" />
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-white border-blue-200 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-700 mr-4 uppercase"
+          >
+            Home
+          </a>
+          <a
+            href="./about.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-700 mr-4 uppercase"
+          >
+            About
+          </a>
+          <a
+            href="https://www.facebook.com/wotasaidwhat9/"
+            target="_blank"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-700 mr-4 uppercase"
+          >
+            Facebook Page
+          </a>
         </div>
+      </div>
+    </nav>
+    <div
+      class="max-w-xs lg:max-w-sm rounded overflow-hidden shadow-lg bg-blue-200"
+    >
+      <img
+        class=""
+        src="https://scontent.fhkg1-1.fna.fbcdn.net/v/t1.0-9/87479006_1495966407230064_6938794913962131456_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=gbR7iJD6zsEAX_Nsy_k&_nc_ht=scontent.fhkg1-1.fna&oh=070a780f5b216499ef169c20234db11a&oe=5F0DD30E"
+        alt="尾上美月"
+      />
+      <div class="px-6 py-4">
+        <div class="text-2xl font-extrabold text-xl mb-2 text-center">
+          尾上美月
+        </div>
+        <p class="text-gray-700 text-base">
+          AKB48 チーム8
+        </p>
+        <p class="text-gray-700 text-base">
+          誕生日: <span>2000年5月22日</span>(20歳)
+        </p>
+        <p class="text-gray-700 text-base">出身地: <span>長崎県</span></p>
+      </div>
+      <div class="px-6 py-4">
+        <button
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          Twitter
+        </button>
+        <button
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          Facebook
+        </button>
+        <button
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          Instagram
+        </button>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
