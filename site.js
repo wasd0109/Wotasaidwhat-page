@@ -46,10 +46,10 @@ const findBirthdayMember = (list) => {
 const generateBirthday = (birthdayMember) => {
   if (birthdayMember.length === 0) return;
   birthdayMember.forEach((member) => {
-    const { name, birthday } = member;
+    const { name, birthday, group } = member;
     const age = calculateAge(new Date(birthday));
     const paragraph = document.createElement("p");
-    paragraph.textContent = `Happy birthday ${name}, age ${age}`;
+    paragraph.textContent = `Happy birthday ${name} (${group}) ${age}`; //Age is showing NaN on Safari
     infoBox.appendChild(paragraph);
   });
 };
