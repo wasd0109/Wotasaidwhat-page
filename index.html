@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="icon" href="./image/site_logo.png" />
   </head>
-  <body class="bg-green-400">
-    <nav class="flex items-center justify-between flex-wrap bg-green-500 p-6">
+  <body class="bg-blue-400">
+    <nav class="flex items-center justify-between flex-wrap bg-blue-500 p-6">
       <div class="flex items-center flex-shrink-0 text-white mr-6 w-40 lg:w-32">
         <img src="./image/logo.png" alt="" />
       </div>
       <div class="block lg:hidden">
         <button
+          id="navBtn"
           class="flex items-center px-3 py-2 border rounded text-white border-blue-200 hover:text-white hover:border-white"
         >
           <svg
@@ -25,7 +26,10 @@
           </svg>
         </button>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div
+        id="navContent"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
+      >
         <div class="text-sm lg:flex-grow">
           <a
             href="#"
@@ -50,42 +54,117 @@
       </div>
     </nav>
     <div
-      class="max-w-xs lg:max-w-sm rounded overflow-hidden shadow-lg bg-blue-200"
+      class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3"
+      role="alert"
     >
-      <img
-        class=""
-        src="https://scontent.fhkg1-1.fna.fbcdn.net/v/t1.0-9/87479006_1495966407230064_6938794913962131456_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=gbR7iJD6zsEAX_Nsy_k&_nc_ht=scontent.fhkg1-1.fna&oh=070a780f5b216499ef169c20234db11a&oe=5F0DD30E"
-        alt="尾上美月"
-      />
-      <div class="px-6 py-4">
-        <div class="text-2xl font-extrabold text-xl mb-2 text-center">
-          尾上美月
-        </div>
-        <p class="text-gray-700 text-base">
-          AKB48 チーム8
-        </p>
-        <p class="text-gray-700 text-base">
-          誕生日: <span>2000年5月22日</span>(20歳)
-        </p>
-        <p class="text-gray-700 text-base">出身地: <span>長崎県</span></p>
+      <p id="infoBox" class="font-normal uppercase font-sans">
+        Today is
+        <span id="date" class="font-bold text-sm"> </span>
+      </p>
+    </div>
+    <div id="content" class="block md:flex mb-4">
+      <div id="articles" class="bg-blue-200 m-auto md:m-4 w-2/3">
+        <article class="my-2 px-1">
+          <h2 class="text-xl font-bold mb-3">
+            Lorem ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            unde tempora doloremque dolores qui voluptatibus nam, officiis
+            dolorem quas quia. Impedit distinctio quis laboriosam eligendi,
+            numquam voluptate fugit praesentium quas!
+          </p>
+        </article>
+        <div class="bg-blue-400"><br class="p-0" /></div>
+        <article class="my-2 px-1">
+          <h2 class="text-xl font-bold mb-3">
+            Lorem ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            unde tempora doloremque dolores qui voluptatibus nam, officiis
+            dolorem quas quia. Impedit distinctio quis laboriosam eligendi,
+            numquam voluptate fugit praesentium quas!
+          </p>
+        </article>
+        <div class="bg-blue-400"><br /></div>
+        <article class="my-2 px-1">
+          <h2 class="text-xl font-bold mb-3">
+            Lorem ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            unde tempora doloremque dolores qui voluptatibus nam, officiis
+            dolorem quas quia. Impedit distinctio quis laboriosam eligendi,
+            numquam voluptate fugit praesentium quas!
+          </p>
+        </article>
+        <div class="bg-blue-400"><br /></div>
+        <article class="my-2 px-1">
+          <h2 class="text-xl font-bold mb-3">
+            Lorem ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            unde tempora doloremque dolores qui voluptatibus nam, officiis
+            dolorem quas quia. Impedit distinctio quis laboriosam eligendi,
+            numquam voluptate fugit praesentium quas!
+          </p>
+        </article>
+        <div class="bg-blue-400"><br /></div>
+        <article class="my-2 px-1">
+          <h2 class="text-xl font-bold mb-3">
+            Lorem ipsum
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            unde tempora doloremque dolores qui voluptatibus nam, officiis
+            dolorem quas quia. Impedit distinctio quis laboriosam eligendi,
+            numquam voluptate fugit praesentium quas!
+          </p>
+        </article>
+        <div class="bg-blue-400"><br /></div>
       </div>
-      <div class="px-6 py-4">
-        <button
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-        >
-          Twitter
-        </button>
-        <button
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-        >
-          Facebook
-        </button>
-        <button
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-        >
-          Instagram
-        </button>
+      <div
+        id="todayMember"
+        class="md:order-first m-auto md:w-1/3 max-w-xs lg:max-w-sm rounded overflow-hidden shadow-lg bg-blue-200 mt-4"
+      >
+        <img
+          src="https://scontent.fhkg1-1.fna.fbcdn.net/v/t1.0-9/87479006_1495966407230064_6938794913962131456_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=gbR7iJD6zsEAX_Nsy_k&_nc_ht=scontent.fhkg1-1.fna&oh=070a780f5b216499ef169c20234db11a&oe=5F0DD30E"
+          alt="尾上美月"
+        />
+        <div class="px-6 py-4">
+          <div class="text-2xl font-extrabold text-xl mb-2 text-center">
+            尾上美月
+          </div>
+          <p class="text-gray-700 text-base">
+            AKB48 チーム8
+          </p>
+          <p class="text-gray-700 text-base">
+            誕生日: <span>2000年5月22日</span>(20歳)
+          </p>
+          <p class="text-gray-700 text-base">出身地: <span>長崎県</span></p>
+        </div>
+        <div class="px-6 py-4">
+          <button
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+          >
+            Twitter
+          </button>
+          <button
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+          >
+            Facebook
+          </button>
+          <button
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mt-2"
+          >
+            Instagram
+          </button>
+        </div>
       </div>
     </div>
+    <script src="./keyaki.js"></script>
+    <script src="./site.js"></script>
   </body>
 </html>
