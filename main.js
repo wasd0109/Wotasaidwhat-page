@@ -24,16 +24,15 @@ const getToday = () => {
 
 const getTodayDate = () => {
   let todayDate = new moment();
-  const dd = String(moment().get("date"));
-  const mm = String(moment().get("month") + 1); //January is 0!
+  const dd = String(moment().get("date")).padStart(2, "0");
+  const mm = String(moment().get("month") + 1).padStart(2, "0"); //January is 0!
   todayDate = `${mm}-${dd}`;
   return todayDate;
 };
 
 // const today = getTodayDate();
 
-const year = "2020";
-const today = "6-25";
+const today = "06-25";
 
 const calculateAge = (birthday) => {
   var diff_ms = moment() - moment(birthday);
